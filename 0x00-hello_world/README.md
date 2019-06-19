@@ -1,0 +1,1 @@
+About compiling and basics of C
