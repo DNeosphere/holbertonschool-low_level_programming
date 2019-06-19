@@ -1,0 +1,7 @@
+6-size.c: In function ‘main’:
+6-size.c:9:53: error: expected ‘)’ before ‘;’ token
+ printf("Size of a char: %lu byte(s)\n", sizeof(char);
+                                                     ^
+6-size.c:15:1: error: expected declaration or statement at end of input
+ }
+ ^
