@@ -14,5 +14,5 @@ for (ralpha = 'z'; ralpha >= 'a'; ralpha--)
 putchar(ralpha);
 }
 putchar('\n');
- return (0);
+return (0);
 }
