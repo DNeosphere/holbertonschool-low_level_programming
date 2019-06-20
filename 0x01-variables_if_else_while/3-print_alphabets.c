@@ -20,7 +20,7 @@ letter++;
 while (letterBig  <= 'Z')
 {
 putchar(letterBig);
- letterBig++;
+letterBig++;
 }
 putchar('\n');
 return (0);
