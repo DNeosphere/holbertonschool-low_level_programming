@@ -16,7 +16,7 @@ for (numh = nump + 1; numh <= 57; numh++)
 {
 putchar(nump);
 putchar(numh);
-if (nump == 57 && numh == 57)
+if (nump == 56 && numh == 57)
 {
 break;
 }
