@@ -16,13 +16,12 @@ if (n >= 0)
 {
 mod = n % n10;
 _putchar (mod + '0');
-return (mod);
 }
 else
 {
 pn = n * nn;
 mod = pn % n10;
 _putchar (mod + '0');
-return (mod);
 }
+return (mod);
 }
