@@ -1,4 +1,3 @@
-
 #include "holberton.h"
 /**
  * times_table - matrix for table 9.
@@ -12,8 +11,32 @@ void times_table(void)
     {
       for (multd = 0; multd <=9; multd++)
 	{
-	  _putchar((multr * multd) / 10 + '0');
-	  _putchar((multr * multd) % 10 + '0');
-	} 
+	  if (multr * multd >= 10)
+	  {
+	    _putchar((multr * multd) / 10 + '0');
+	    _putchar((multr * multd) % 10 + '0');
+		if (multd != 9)
+		{	    
+		_putchar(' ');
+	        _putchar(',');   
+		}
+	  }	
+	    
+      else 
+	    {	
+		if (multd != 0)
+		{	      
+	         _putchar(' ');
+		}
+	      _putchar((multr * multd) % 10 + '0');
+		if (multd != 9)	     
+		{
+		 _putchar(',');
+	        _putchar(' ');
+	        } 
+	    }	
+	}
+      _putchar('\n');
     }
+
 }
