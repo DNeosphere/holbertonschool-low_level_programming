@@ -21,7 +21,7 @@ largest = b;
 }
 else if (a == b)
 {
-largest = a;
+largest = b;
 }
 else
 {
