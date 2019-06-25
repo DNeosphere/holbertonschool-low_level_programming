@@ -17,8 +17,8 @@ _putchar((multr * multd) / 10 + '0');
 _putchar((multr * multd) % 10 + '0');
 if (multd != 9)
 {
-_putchar(' ');
 _putchar(',');
+_putchar(' ');
 }
 }
 else
