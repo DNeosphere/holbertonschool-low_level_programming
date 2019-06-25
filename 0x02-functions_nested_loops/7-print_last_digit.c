@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * print_sign - prints signs of numbers if positive, negative or zero
+ * print_last_digit - prints the last digit of a number
  * @n: - is the number
- * Return: 1 if positiv, 0 if zero, -1 if negative
+ * Return: the last number
  */
 int print_last_digit(int n)
 {
@@ -15,19 +15,19 @@ n10 = 10;
 if (n > 0)
 {
 mod = n % n10;
-_putchar(mod);
+_putchar (mod + '0');
 return (mod);
 }
 else if (n == 0)
- {
-   _putchar (n);  
-  return (n);
-  }
+{
+_putchar (n + '0');
+return (n);
+}
 else
 {
 pn = n * nn;
 mod = pn % n10;
- _putchar(mod);
+_putchar (mod + '0');
 return (mod);
-} 
+}
 }

@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * print_sign - prints signs of numbers if positive, negative or zero
+ * _abs - returns the absolute value of a number
  * @n: - is the number
- * Return: 1 if positiv, 0 if zero, -1 if negative
+ * Return: absolute value
  */
 int _abs(int n)
 {
