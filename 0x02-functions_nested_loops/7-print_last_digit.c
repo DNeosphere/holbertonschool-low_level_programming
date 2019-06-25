@@ -12,7 +12,7 @@ int nn;
 int pn;
 nn = -1;
 n10 = 10;
-if (n >= 0)
+if (n > 0)
 {
 mod = n % n10;
 _putchar (mod + '0');
