@@ -12,7 +12,7 @@ int minutes0;
 int minutes1;
 for (hours0 = 0; hours0 <= 2; hours0++)
 {
-for (hours1 = 0; hours1 <= 3; hours1++)
+for (hours1 = 0; hours1 <= 9; hours1++)
 {
 for (minutes0 = 0; minutes0 <= 5; minutes0++)
 {
@@ -23,9 +23,25 @@ _putchar (hours1 + '0');
 _putchar (':');
 _putchar (minutes0 + '0');
 _putchar (minutes1 + '0');
-_putchar('\n');
+_putchar ('\n');
+if (hours0 == 2 && hours1 == 3 && minutes0 == 5 && minutes1 == 9)
+{
+break;
 }
 }
+if (hours0 == 2 && hours1 == 3 && minutes0 == 5 && minutes1 == 9)
+{
+break;
+}
+}
+if (hours0 == 2 && hours1 == 3 && minutes0 == 5 && minutes1 == 9)
+{
+break;
+}
+}
+if (hours0 == 2 && hours1 == 3 && minutes0 == 5 && minutes1 == 9)
+{
+break;
 }
 }
 }
