@@ -1,3 +1,4 @@
+void times_table(void);
 void print_to_98(int n);
 int _putchar(char);
 void print_alphabet_x10(void);
