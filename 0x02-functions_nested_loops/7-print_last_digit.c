@@ -6,22 +6,15 @@
  */
 int print_last_digit(int n)
 {
-int n10;
-int mod;
-int nn;
-int pn;
-nn = -1;
-n10 = 10;
-if (n > 0)
+if (n < 0)
 {
-mod = n % n10;
-_putchar (mod + '0');
+n = -(n % 10);
+_putchar(n + '0');
 }
 else
 {
-pn = n * nn;
-mod = pn % n10;
-_putchar (mod + '0');
+n = n % 10;
+_putchar(n + '0');
 }
-return (mod);
+return (n);
 }
