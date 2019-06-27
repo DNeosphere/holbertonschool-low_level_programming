@@ -1,7 +1,7 @@
  #include "holberton.h"
 /**
- * times_table - matrix for table 9.
- *
+ * print_diagonal - print lines and spaces in a diagonal line
+ * @n: lenght of diagonal
  */
 void print_diagonal(int n)
 {
@@ -16,11 +16,14 @@ else
 for (y = 0; y < n; y++)
 {
 	for (x = 0; x <= y; x++)
-	{		 
-	_putchar(' ');
+	{
 		if (x == y)
 		{
 		_putchar('\\');
+		}
+		else
+		{
+		_putchar(' ');
 		}
 	}
 _putchar('\n');
