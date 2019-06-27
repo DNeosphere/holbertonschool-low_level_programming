@@ -1,13 +1,7 @@
-    
 #include "holberton.h"
 /**
- * times_table - matrix for table 9.
- *
- */
-    
-#include "holberton.h"
-/**
- * times_table - matrix for table 9.
+ * print_square - prints a square with the size of a given number.
+ * @size: size of the square
  *
  */
 void print_square(int size)
@@ -20,7 +14,7 @@ _putchar('\n');
 }
 for (y = 0; y < size; y++)
 {
-	for (x = 0; x <= size; x++)
+	for (x = 0; x < size; x++)
 	{
 	_putchar(35);
 	}
