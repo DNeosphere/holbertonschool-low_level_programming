@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * print_square - prints a square with the size of a given number.
- * @size: size of the square
+ * print_triangle - prints a triangle with spaces and hashtags..
+ * @size: base of the piramid
  *
  */
 void print_triangle(int size)
