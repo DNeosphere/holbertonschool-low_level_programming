@@ -6,7 +6,7 @@
 void print_line(int n)
 {
 int print;
-for (print = 0; print <= n; print++)
+for (print = 0; print < n; print++)
 {
 _putchar(95);
 }
