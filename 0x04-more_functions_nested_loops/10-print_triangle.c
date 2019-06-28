@@ -6,19 +6,22 @@
  */
 void print_triangle(int size)
 {
-if (size <= 0)
-{
-_putchar('\n');
-}
 int a;
 int b;
 int x;
 x = size;
+if (size <= 0)
+{
+_putchar('\n');
+}
+else
+{
 for (a = 0 ; a < size; a++)
 {
+	x--;
 	for (b = 0; b < size; b++)
 	{
-		if (x > b)
+		if (b < x)
 		{
 		_putchar(' ');
 		}
@@ -26,6 +29,9 @@ for (a = 0 ; a < size; a++)
 		{
 		_putchar('#');
 		}
-	x--;
+	
 	}
+_putchar('\n');
+}
+}
 }
