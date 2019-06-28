@@ -29,7 +29,6 @@ for (a = 0 ; a < size; a++)
 		{
 		_putchar('#');
 		}
-	
 	}
 _putchar('\n');
 }
