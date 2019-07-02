@@ -25,7 +25,7 @@ a = 0;
 		}
 	else if (a % 2 != 0)
 		{
-		a = (a - 1) / 2;
+		a = (a + 1) / 2;
 		for (c = a; str[c] != '\0'; c++)
 			{
 			_putchar(str[c]);
