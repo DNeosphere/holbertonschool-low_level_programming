@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * print_rev - prints a reversed string
- * @s: pointer to the string
+ * puts_half - prints the second half of a string
+ * @str: pointer to the string
  *
  */
 void puts_half(char *str)
