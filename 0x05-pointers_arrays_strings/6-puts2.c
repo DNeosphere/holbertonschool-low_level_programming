@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- *
- *
+ * puts2 - prints 1 out of 2 characters of a string
+ * @str: string to be printed
  */
+
 void puts2(char *str)
 {
 int a;
@@ -12,6 +13,6 @@ int a;
 		{
 		_putchar(str[a]);
 		}
-	} 
+	}
 _putchar('\n');
 }
