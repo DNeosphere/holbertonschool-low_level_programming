@@ -1,18 +1,17 @@
 #include "holberton.h"
 /**
- * _isdigit - checks if c is a digit
- * @c: input to be checked
- * Return: 1 if digit, 0 if not
- *
+ * _strlen - determinates the lenght of a string
+ * @s: pointer to string
+ * Return: the length
  */
 int _strlen(char *s)
 {
 int a;
 int len;
-for(a = 0; s[a] != '\0'; a++)
+for (a = 0; s[a] != '\0'; a++)
 {
 len++;
-} 
+}
 return (a);
 }
 
