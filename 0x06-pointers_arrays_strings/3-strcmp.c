@@ -1,9 +1,10 @@
 #include "holberton.h"
 /**
- * _strcpy - copies a pointed string
- * @dest: pointer to the destine string
- * @src: pointer to the source string
- * Return: the adress of the destiny string
+ * _strcmp - copies a pointed string
+ * @s1: string to compare
+ * @s2: string to be compared
+ * Return: cero if the string are the same, the difference in ascii
+ * if different
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -16,7 +17,7 @@ while (*s1 != '\0' && *s2 != '\0')
 	return (minus);
 	}
 	s1++;
-	s2++;	
+	s2++;
 	}
-return (0);	
+return (0);
 }
