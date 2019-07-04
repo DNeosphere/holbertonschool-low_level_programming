@@ -1,9 +1,8 @@
 #include "holberton.h"
 /**
- * _strcpy - copies a pointed string
- * @dest: pointer to the destine string
- * @src: pointer to the source string
- * Return: the adress of the destiny string
+ * reverse_array - copies a reversed pointed array of integers
+ * @a: array of integers
+ * @n: amount of integers to be copied
  */
 void reverse_array(int *a, int n)
 {
@@ -15,7 +14,7 @@ x = n;
 
 	for (rev = 0; rev <= n; rev++)
 	{
-	x--;	
+	x--;
 	buff[x] = a[rev];
 	}
 	for (cop = 0; cop < n; cop++)
