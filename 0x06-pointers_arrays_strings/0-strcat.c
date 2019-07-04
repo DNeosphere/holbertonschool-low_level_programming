@@ -17,7 +17,7 @@ x = 0;
 	{
 	n++;
 	}
-	for (b = n; dest[b] != '\0'; b++)
+	for (b = n; src[b - n] != '\0'; b++)
 	{
 	dest[b] = src[x];
 	x++;
