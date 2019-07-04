@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * _atoi - looks for numbers of a string and converts
+ * them into integers.
+ * @s: pointer to the string to be iterated
+ * Return: the number and sign of an array, 0 if no number.
  */
 int _atoi(char *s)
 {
@@ -13,7 +14,7 @@ int out;
 num = 0;
 sign = 0;
 out = 0;
-for (array = 0; s[array] != '\0'; array ++)
+for (array = 0; s[array] != '\0'; array++)
 	{
 	if (s[array] == '-')
 		{
