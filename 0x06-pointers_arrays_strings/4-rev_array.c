@@ -11,8 +11,10 @@ int buff[100];
 int x;
 int cop;
 int len;
+int end;
 x = 0;
 len = n;
+end = n;
 	while (len != 0)
 	{
 	buff[x] = a[x];
@@ -21,8 +23,8 @@ len = n;
 	}
 	for (cop = 0; cop <= n; cop++)
 	{
-	x--;
-	a[cop] = buff[x];
+	end--;
+	a[cop] = buff[end];
 	}
 
 }
