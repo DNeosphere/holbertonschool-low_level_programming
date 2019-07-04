@@ -2,7 +2,7 @@
 /**
  * leet - changes letters for numbers in leet code
  * @s: pointer to the string
- * return: the changed string
+ * Return: the changed string
  */
 char *leet(char *s)
 {
