@@ -7,23 +7,22 @@
  */
 void reverse_array(int *a, int n)
 {
-int len;
-int rev;
-int buff[1000];
+int buff[100];
 int x;
 int cop;
+int len;
 x = 0;
-
-for (len = 0; a[len] <= n; len++)
-{
-}
-	for (rev = len; a[rev] > 0; rev--)
+len = n;
+	while (len != 0)
 	{
-	buff[x] = a[rev];
+	buff[x] = a[x];
+	len--;
 	x++;
 	}
-		for (cop = 0; a[cop] <= n; cop++)
-		{
-		a[cop] = buff[cop];
-		}
+	for (cop = 0; cop <= n; cop++)
+	{
+	x--;
+	a[cop] = buff[x];
+	}
+
 }
