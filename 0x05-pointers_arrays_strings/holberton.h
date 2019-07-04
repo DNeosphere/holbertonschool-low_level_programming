@@ -1,6 +1,7 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 void puts2(char *str);
+int _atoi(char *s);
 void puts_half(char *str);
 void rev_string(char *s);
 char *_strcpy(char *dest, char *src);
