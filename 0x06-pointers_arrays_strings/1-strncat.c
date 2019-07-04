@@ -1,8 +1,9 @@
 #include "holberton.h"
 /**
- * _strcpy - copies a pointed string
+ * _strncat - adds n chars to a string
  * @dest: pointer to the destine string
  * @src: pointer to the source string
+ * @n: chars to be added
  * Return: the adress of the destiny string
  */
 char *_strncat(char *dest, char *src, int n)
