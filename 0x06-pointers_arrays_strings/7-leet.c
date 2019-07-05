@@ -10,7 +10,7 @@ int inner;
 int out;
 char letter[] = "AaEeOoTtLl";
 char num[] = "4433007711";
-	for(out = 0; s[out] != '\0'; out++)
+	for (out = 0; s[out] != '\0'; out++)
 	{
 		for (inner = 0; inner <= 10; inner++)
 		{
