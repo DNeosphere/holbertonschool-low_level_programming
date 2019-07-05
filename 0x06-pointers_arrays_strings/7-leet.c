@@ -6,21 +6,18 @@
  */
 char *leet(char *s)
 {
-int out;
 int inner;
-int num[] = {52, 51, 48, 55, 49};
-char letter[5][2] = {{'A', 'a'}, {'E', 'e'},
-	{'O', 'o'}, {'T', 't'}, {'L', 'l'}};
-
-	for (out = 0; s[out] != '\0'; out++)
+int out;
+char letter[] = "AaEeOoTtLl";
+char num[] = "4433007711";
+	for(out = 0; s[out] != '\0'; out++)
 	{
-		for (inner = 0; inner <= 4; inner++)
+		for (inner = 0; inner <= 10; inner++)
 		{
-			if (s[out] == letter[inner][0] || s[out] == letter[inner][1])
+			if (s[out] == letter[inner])
 			{
 				s[out] = num[inner];
 			}
-
 		}
 	}
 return (s);
