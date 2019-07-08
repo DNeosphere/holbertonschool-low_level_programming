@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * memcpy - copies a chunk of memory into other array
+ * _memcpy - copies a chunk of memory into other array
  * @src: source string
  * @dest: destiny string
  * @n: amount of memory to be copied
