@@ -14,13 +14,12 @@ int c;
 int flag;
 int count;
 count = 0;
-
+flag = 0;
 for (a = 0; accept[a] != '\0'; a++)
 	{
 	}
 for (b = 0; b <= a; b++)
 {
-flag = 0;
 	for (c = 0; accept[c] != '\0'; c++)
 		{
 		if (s[b] == accept[c])
