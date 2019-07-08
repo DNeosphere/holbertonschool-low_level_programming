@@ -11,21 +11,20 @@ unsigned int _strspn(char *s, char *accept)
 int a;
 int b;
 int c;
-int len;
 int count;
 count = 0;
-len = 0;
-
 for (a = 0; accept[a] != '\0'; a++)
 	{
-	len++;
+		;
 	}
-for (b = 0; b <= len; b++)
+for (b = 0; b <= a; b++)
 {
 	for (c = 0; accept[c] != '\0'; c++)
 		{
 		if (s[b] == accept[c])
 			count++;
+		else
+			return(count);
 		}
 	}
 return (count);
