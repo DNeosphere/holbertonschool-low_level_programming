@@ -29,5 +29,5 @@ for (b = 0; b <= a; b++)
 if (flag == 0)
 break;
 }
-return (count);
+return (b);
 }
