@@ -24,7 +24,7 @@ for (b = 0; b <= a; b++)
 		if (s[b] == accept[c])
 			count++;
 		else
-			return(count);
+			return (count);
 		}
 	}
 return (count);

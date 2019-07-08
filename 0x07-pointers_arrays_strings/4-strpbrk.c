@@ -20,5 +20,5 @@ int b;
 			}
 		}
 	}
-return (0);
+return ((s + a));
 }
