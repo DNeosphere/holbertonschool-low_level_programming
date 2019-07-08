@@ -12,6 +12,8 @@ while (*s != '\0')
 	if (*s == c)
 	break;
 	s++;
+	else
+	return (s);
 }
 return (s);
 }
