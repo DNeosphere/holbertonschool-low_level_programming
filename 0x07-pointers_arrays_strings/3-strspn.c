@@ -16,7 +16,7 @@ int count;
 count = 0;
 for (a = 0; accept[a] != '\0'; a++)
 	{
-		;
+	;
 	}
 for (b = 0; b <= a; b++)
 {
@@ -27,7 +27,7 @@ for (b = 0; b <= a; b++)
 			flag = 1;
 		}
 if (flag == 0)
-break;	
+break;
 }
 return (count);
 }
