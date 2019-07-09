@@ -23,11 +23,12 @@ for (b = 0; b <= a; b++)
 	for (c = 0; accept[c] != '\0'; c++)
 		{
 		if (s[b] == accept[c])
-			count++;
+			/*count++;*/
 			flag = 1;
 		}
 if (flag == 0)
 break;
+count++;
 }
-return (b);
+return (count);
 }
