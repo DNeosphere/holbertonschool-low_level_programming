@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * set_string - Write a function that sets the value of a pointer to a char..
+ * @s: pointer
+ * @to: char
  */
 void set_string(char **s, char *to)
 {
