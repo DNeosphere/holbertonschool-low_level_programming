@@ -17,23 +17,19 @@ count = 0;
 flag = 0;
 for (a = 0; s[a] != '\0'; a++)
 	{
-	/*}
-for (b = 0; b <= a; b++)
-{*/
 	flag = 0;
-	for (c = 0; accept[c] != '\0'; c++)
+		for (c = 0; accept[c] != '\0'; c++)
 		{
-		if (s[a] == accept[c])
-		{
+			if (s[a] == accept[c])
+			{
 			count++;
 			flag = 1;
-		}
+			}
 		}
 if (flag == 0)
-{
+	{
 	break;
-}
-	/*count++;*/
+	}
 }
 return (count);
 }
