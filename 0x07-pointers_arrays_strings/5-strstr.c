@@ -6,25 +6,22 @@
  * Return: number of bytes in the initial segment of s which
  * consist only of bytes from accept
  */
-char *_strstr(char *haystack, char *needle)
+char *_strstr(char *h, char *n)
 {
-int a, i, flag;
-char *address;
-i = 0;
-flag = 0;
-
-	for (a = 0; haystack[a] != '\0' && flag == 0; a++)
+int a, b, c;
+a = 0;
+	while (h[a] != '\0')
 	{
-		if (haystack[a] == needle[0])
-		{
-			while (haystack[a] == needle[i]  haystack[a] != '\0' || needle != '\0')
+	b = 0;
+	c = a;
+		while (h[a] == n[b] && h[a] != '\0'&& n[b] != '\0')
 			{
-			a++;
-			i++;
+				a++;
+				b++;
 			}
-		address = haystack + (a - i);
-		flag == 1;
-		}
+		if (n[b] == '\0')
+			return (h + c);
+		a = c + 1;
 	}
-return (address);
+return (0);
 }
