@@ -12,12 +12,12 @@ int a, b, c;
 a = 0;
 	while (h[a] != '\0')
 	{
-		b = 0;
-		c = a;
+	b = 0;
+	c = a;
 		while (h[a] == n[b] && h[a] != '\0' && n[b] != '\0')
 		{
-			a++;
-			b++;
+				a++;
+				b++;
 		}
 		if (n[b] == '\0')
 			return (h + c);
