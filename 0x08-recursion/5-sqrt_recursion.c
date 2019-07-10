@@ -2,9 +2,8 @@
 /**
  * _sqrt_recursion - prints the nature square root of a number
  * @n: the number
+ * Return: aaa
  */
-
-int fx2(int n, int x);
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
