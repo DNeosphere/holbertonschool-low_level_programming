@@ -50,7 +50,7 @@ int coins(int x)
 	else if (x / 5 > 0)
 		return (coins(x % 5) + x / 5);
 	else if (x / 2 > 0)
-		return (coins(x % 2) + x / 2);		
+		return (coins(x % 2) + x / 2);
 	else if (x / 1 > 0)
 		return (coins(x % 1) + x / 1);
 	return (0);
