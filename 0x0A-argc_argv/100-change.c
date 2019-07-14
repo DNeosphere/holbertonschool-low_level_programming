@@ -43,14 +43,15 @@ int coins(int x)
 {
 	if (x == 0)
 		return (0);
-	if (x % 25 == 0)
-		return (coins(x - 25) + 1);
-	else if (x % 10 == 0)
-		return (coins(x - 10) + 1);
-	else if (x % 5 == 0)
-		return (coins(x - 5) + 1);
-	else if (x % 2 == 0)
-		return (coins(x - 2) + 1);
-	else if (x % 1 == 0)
-		return (coins(x - 1) + 1);
+	else if (x / 25 > 0)
+		return (coins(x % 25) + x / 25);
+	else if (x / 10 > 0)
+		return (coins(x % 10) + x / 10);
+	else if (x / 5 > 0)
+		return (coins(x % 5) + x / 5);
+	else if (x / 2 > 0)
+		return (coins(x % 2) + x / 2);		
+	else if (x / 1 > 0)
+		return (coins(x % 1) + x / 1);
+	return (0);
 }
