@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	if (money < 0)
 	{
 		printf("0\n");
-		return (1);	
+		return (1);
 	}
 	else
 	{
