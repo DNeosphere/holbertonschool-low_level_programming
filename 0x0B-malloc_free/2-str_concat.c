@@ -35,8 +35,8 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (copyb = 0; s2[copyb] != '\0'; copyb++)
 	{
-		strcon[len1 + copyb] = s2[copyb];
+		strcon[copya + copyb] = s2[copyb];
 	}
-	strcon[len1 + copyb + 1] = '\0';
+	strcon[copya + copyb] = '\0';
 	return (strcon);
 }
