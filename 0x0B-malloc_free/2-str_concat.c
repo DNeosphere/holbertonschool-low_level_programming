@@ -9,7 +9,7 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	int len1, len2, a, b, copya, copyb;
+	int len3, len1, len2, a, b, copya, copyb;
 	char *strcon;
 
 	if (s1 == NULL)
@@ -25,7 +25,8 @@ char *str_concat(char *s1, char *s2)
 		len2++;
 	}
 	len2 += 1;
-	strcon = (char *) malloc(sizeof(char) * (len1 + len2));
+	len3 = len2 + len1;
+	strcon = (char *) malloc(sizeof(char) * len3);
 	if (strcon == NULL)
 		return (NULL);
 	for (copya = 0; copya <= len1; copya++)
