@@ -33,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		strcon[copya] = s1[copya];
 	}
-	for (copyb = 0; copyb < len2; copyb++)
+	for (copyb = 0; copyb <= len2; copyb++)
 	{
 		strcon[len1 + copyb] = s2[copyb];
 	}
