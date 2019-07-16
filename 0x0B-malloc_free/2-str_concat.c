@@ -29,13 +29,14 @@ char *str_concat(char *s1, char *s2)
 	strcon = malloc(sizeof(char) * len3);
 	if (strcon == NULL)
 		return (NULL);
-	for (copya = 0; copya < len1; copya++)
+	for (copya = 0; s1[copya] != '\0'; copya++)
 	{
 		strcon[copya] = s1[copya];
 	}
-	for (copyb = 0; copyb < len2 - 1; copyb++)
+	for (copyb = 0; s2[copyb] != '\0'; copyb++)
 	{
 		strcon[len1 + copyb] = s2[copyb];
 	}
+	strcon[len1 + copyb + 1] = '\0';
 	return (strcon);
 }
