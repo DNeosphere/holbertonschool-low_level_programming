@@ -12,6 +12,8 @@ char *argstostr(int ac, char **av)
 	int a, b, c, d, cont = 0;
 	char *str, *str2;
 
+	if (ac == 0 || *av == NULL)
+		return (NULL);
 	for (a = 0; a < ac; a++)
 	{
 		for (b = 0; av[a][b] != '\0'; b++)
