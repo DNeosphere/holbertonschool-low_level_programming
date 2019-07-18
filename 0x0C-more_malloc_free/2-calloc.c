@@ -1,12 +1,12 @@
 #include "holberton.h"
 #include <stdlib.h>
 /**
- * alloc_grid - copies a string into a newly allocated space in memory
- * @w: string to copy
- * @h: height
- * Return: NULL if size == 0, a pointer to the array, null if
- * the memory allocation fails
- */
+ * _calloc - allocates memory for an array
+ * @nmemb: amout of elements inside the array
+ * @size: of the elements in bytes
+ * Return: NULL if size == 0, a pointer to the array,
+ * null if the memory allocation fails
+ **/
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int arrsize, a;
