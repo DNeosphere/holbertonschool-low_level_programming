@@ -20,5 +20,6 @@ dog_t *new_dog(char *name, float age, char *owner);
 int _putchar(char c);
 char *_strdup(char *str);
 char *_strcpy(char *dest, char *src);
+void free_dog(dog_t *d);
 int _strlen(char *s);
 #endif
