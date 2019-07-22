@@ -12,59 +12,65 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
 	char *cpname, *cpowner;
+	int lenname, lenowner;
 
 	new_dog = malloc(sizeof(dog_t));
 	if (new_dog == NULL)
 		return (NULL);
-	cpname = _strdup(name);
+	lenname = _strlen(name);
+	lenowner = _strlen(owner);
+	cpname = malloc(sizeof(char) * lenname + 1);
 	if (cpname == NULL)
 	{
-		free(new_dog);
 		free(cpname);
+		free(new_dog);
 		return (NULL);
 	}
-	cpowner = _strdup(owner);
+	cpname = _strcpy(cpname, name);
+	cpowner = malloc(sizeof(char) * lenowner + 1);
 	if (cpowner == NULL)
 	{
-		free(new_dog);
-		free(cpname);
 		free(cpowner);
+		free(cpname);
+		free(new_dog);
 		return (NULL);
 	}
+	cpowner = _strcpy(cpowner, owner);
 	new_dog->name = cpname;
 	new_dog->age = age;
 	new_dog->owner = cpowner;
-	if (cpowner != NULL)
-		free(cpowner);
-	if (cpname != NULL)
-		free(cpname);
-	
 return (new_dog);
 }
 /**
- * _strdup - copies a string into a newly allocated space in memory
- * @str: string to copy
- * Return: NULL if size == 0, a pointer to the array, null if
- * the memory allocation fails
+ * _strlen - determinates the lenght of a string
+ * @s: pointer to string
+ * Return: the length
  */
-char *_strdup(char *str)
+int _strlen(char *s)
 {
-	char *news;
-	int a, b, len = 0;
-
-	if (str == NULL)
-		return (NULL);
-	for (a = 0; str[a] != '\0'; a++)
+int a;
+int len;
+for (a = 0; s[a] != '\0'; a++)
+{
+len++;
+}
+return (a);
+}
+/**
+ * _strcpy - copies a pointed string
+ * @dest: pointer to the destine string
+ * @src: pointer to the source string
+ * Return: the adress of the destiny string
+ */
+char *_strcpy(char *dest, char *src)
+{
+int a;
+a = 0;
+	while (src[a] != '\0')
 	{
-		len++;
+	dest[a] = src[a];
+	a++;
 	}
-	len += 1;
-	news = (char *) malloc(sizeof(char) * len);
-	if (news == NULL)
-		return (NULL);
-	for (b = 0; b <= len; b++)
-	{
-		news[b] = str[b];
-	}
-	return (news);
+dest[a] = '\0';
+return (dest);
 }
