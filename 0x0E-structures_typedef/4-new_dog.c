@@ -12,7 +12,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *ndog;
 	char *cpname, *cpowner;
-	int lenage, lenowner;
 
 	ndog = malloc(sizeof(dog_t));
 	if (ndog == NULL)
@@ -21,30 +20,47 @@ dog_t *new_dog(char *name, float age, char *owner)
 	ndog->age = age;
 	ndog->owner = owner;
 
-	lenage = _strlen(ndog->name);
-	lenowner = _strlen(ndog->owner);
-
-	cpname = malloc(sizeof(char) * lenage + 1);
+	cpname = _strdup(ndog->name);
 	if (cpname == NULL)
+	{
+		free(cpname);
+		free(ndog);
 		return (NULL);
-	cpowner = malloc(sizeof(char) * lenowner + 1);
+	}
+	cpowner = _strdup(ndog->owner);
 	if (cpowner == NULL)
+	{
+		free(cpowner);
+		free(cpname);
+		free(ndog);
 		return (NULL);
+	}
 return (ndog);
 }
 /**
- * _strlen - determinates the lenght of a string
- * @s: pointer to string
- * Return: the length
+ * _strdup - copies a string into a newly allocated space in memory
+ * @str: string to copy
+ * Return: NULL if size == 0, a pointer to the array, null if
+ * the memory allocation fails
  */
-int _strlen(char *s)
+char *_strdup(char *str)
 {
-int a;
-int len;
-for (a = 0; s[a] != '\0'; a++)
-{
-len++;
-}
-return (a);
-}
+	char *news;
+	int a, b, len = 0;
 
+	if (str == NULL)
+		return (NULL);
+	for (a = 0; str[a] != '\0'; a++)
+	{
+		len++;
+	}
+	len += 1;
+	news = (char *) malloc(sizeof(char) * len);
+	if (news == NULL)
+		return (NULL);
+	for (b = 0; b <= len; b++)
+	{
+		news[b] = str[b];
+	}
+	return (news);
+}
