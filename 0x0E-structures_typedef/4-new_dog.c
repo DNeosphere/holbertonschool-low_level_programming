@@ -10,17 +10,17 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *ndog;
+	dog_t *new_dog;
 	char *cpname, *cpowner;
 
-	ndog = malloc(sizeof(dog_t));
-	if (ndog == NULL)
+	new_dog = malloc(sizeof(dog_t));
+	if (new_dog == NULL)
 		return (NULL);
 	cpname = _strdup(name);
 	if (cpname == NULL)
 	{
 		free(cpname);
-		free(ndog);
+		free(new_dog);
 		return (NULL);
 	}
 	cpowner = _strdup(owner);
@@ -28,13 +28,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		free(cpowner);
 		free(cpname);
-		free(ndog);
+		free(new_dog);
 		return (NULL);
 	}
-	ndog->name = cpname;
-	ndog->age = age;
-	ndog->owner = owner;
-return (ndog);
+	new_dog->name = cpname;
+	new_dog->age = age;
+	new_dog->owner = cpowner;
+return (new_dog);
 }
 /**
  * _strdup - copies a string into a newly allocated space in memory
