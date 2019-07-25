@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		exit(1);
 	}
 
-	bytes = atoi(argv[1]);
+	byamount = atoi(argv[1]);
 
 	if (byamount < 0)
 	{
