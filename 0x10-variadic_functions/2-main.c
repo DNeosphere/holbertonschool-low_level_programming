@@ -1,5 +1,6 @@
-#include "variadic_functions.h"
 #include <stdio.h>
+#include "variadic_functions.h"
+
 /**
  * main - check the code for Holberton School students.
  *
@@ -7,6 +8,7 @@
  */
 int main(void)
 {
-    print_numbers(NULL, 4, 0, 98, -1024, 402);
+    print_strings(0, 2, 0, 0);
     return (0);
 }
+
