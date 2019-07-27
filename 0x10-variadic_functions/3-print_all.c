@@ -2,15 +2,14 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
- * print_strings - prints strings
- * @separator: string that separates the strings
- * @n: number of parameters
+ * print_all - prints char, integer, float and string format
+ * @format: array with the initial letter of the format to print
  * @...: parameters
  */
 void print_all(const char * const format, ...)
 {
 	char *p;
-	int a, flag;
+	int a = 0;
 	va_list forlist;
 
 	va_start(forlist, format);
@@ -19,10 +18,8 @@ void print_all(const char * const format, ...)
 		printf("\n");
 		return;
 	}
-	a = 0;
 	while (format[a] != '\0')
 	{
-		flag = 0;
 		switch (format[a])
 		{
 			case 'c':
@@ -36,18 +33,18 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				p = va_arg(forlist, char*);
-					if (p == NULL)
-						printf("(nil)");
-					printf("%s", p);
-				break;
-			default:
-				flag = 1;
-				break;
+					if (p != NULL)
+					{
+						printf("%s", p);
+						break;
+					}
+					printf("(nil)");
+					break;
 		}
-		if ((flag == 0) && format[a + 1] != '\0')
+		if ((format[a] == 'c' || format[a] == 'i' || format[a] == 'f'
+		|| format[a] == 's')  && format[a + 1] != '\0')
 			printf(", ");
 		a++;
 	}
-	printf("\n");
-	va_end(forlist);
+	printf("\n"), va_end(forlist);
 }
