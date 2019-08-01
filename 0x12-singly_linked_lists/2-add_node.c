@@ -3,6 +3,7 @@
  * add_node - adds a node at the end of a list
  * @head: pointer to the start of the list
  * @str: string to be copied inside the new node
+ * Return: pointer to the new node
  **/
 list_t *add_node(list_t **head, const char *str)
 {
@@ -12,7 +13,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new == NULL)
 		return (NULL);
 	new->str = strdup(str);
-	new->len = strlen(str);
+	new->len = _strlen(str);
 	new->next = *head;
 	*head = new;
 	return (new);
@@ -22,7 +23,7 @@ list_t *add_node(list_t **head, const char *str)
  * @s: pointer to string
  * Return: the length
  */
-int _strlen(char *s)
+int _strlen(const char *s)
 {
 int a;
 int len;
