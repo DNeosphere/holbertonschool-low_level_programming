@@ -20,13 +20,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int idx)
 
 	temp = *head;
 	count = 0;
-	while (count < (idx - 1))
+	while (count < (idx - 1) && temp != NULL)
 	{
 		count++;
 		temp = temp->next;
-		if (temp == NULL || temp->next == NULL)
-			return (-1);
 	}
+	if (temp == NULL || temp->next == NULL) 
+		return (-1);
 	temp_addr = temp->next->next;
 	free(temp->next);
 	temp->next = temp_addr;
