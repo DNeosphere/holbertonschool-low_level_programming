@@ -6,13 +6,19 @@
  **/
 listint_t *reverse_listint(listint_t **head)
 {
-	listint_t *temp;
+	listint_t *current, *next;
 
 	if (head == NULL)
 		return (NULL);
-	temp = *head;
-	*head = (*head)->next; /*moves forwards in the list */
-	temp->next = reverse_listint(head); /*recursion: the list will be reversed while stored in the stack*/
-	*head = temp; /*set the head to the first element*/
+
+	while (*head)
+	{
+		next = (*head)->next;
+		(*head)->next = current;
+		current = *head;
+		if (current == NULL)
+			return (NULL);
+		*head = next;
+	}
 	return (*head);
 }
