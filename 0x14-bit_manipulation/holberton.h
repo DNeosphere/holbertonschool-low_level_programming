@@ -5,4 +5,4 @@ unsigned int binary_to_uint(const char *b);
 int _strlen(const char *s);
 int _pow_recursion(int x, int y);
 
-#endif /* 	HOLBERTON_H */
+#endif /* HOLBERTON_H */
