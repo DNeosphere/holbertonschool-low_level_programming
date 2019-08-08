@@ -12,7 +12,15 @@ void print_binary(unsigned long int n)
 		len++;
 
 	if (n == 0)
+	{
 		_putchar('0');
+		return;
+	}
+	if (n == 1)
+	{
+		_putchar('1');
+		return;
+	}
 	if
 	/*print the number*/
 	for (index_print = len - 1; index_print >= 0; index_print--)
