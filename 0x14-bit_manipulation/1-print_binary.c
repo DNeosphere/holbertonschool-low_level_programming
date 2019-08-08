@@ -11,6 +11,9 @@ void print_binary(unsigned long int n)
 	while (n >> len)
 		len++;
 
+	if (n == 0)
+		_putchar('0');
+	if
 	/*print the number*/
 	for (index_print = len - 1; index_print >= 0; index_print--)
 	{
