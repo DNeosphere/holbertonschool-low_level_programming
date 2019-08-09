@@ -1,6 +1,7 @@
 #ifndef HOLBERTON_H
 #define HOLBERTON_H
 #include <stdlib.h>
+int get_endianness(void);
 unsigned int binary_to_uint(const char *b);
 int clear_bit(unsigned long int *n, unsigned int index);
 int _strlen(const char *s);
