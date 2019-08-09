@@ -5,7 +5,8 @@
  **/
 void print_binary(unsigned long int n)
 {
-	int index_print, len, number;
+	unsigned long int len, number;
+	int index_print;
 
 	len = 0;
 	while (n >> len)
