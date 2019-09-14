@@ -30,6 +30,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int idx)
 			 free(temp);
 			return (1);
 		}
+		if (!temp)
+			return (-1)
 		temp = temp->next;
 		count++;
 	}
