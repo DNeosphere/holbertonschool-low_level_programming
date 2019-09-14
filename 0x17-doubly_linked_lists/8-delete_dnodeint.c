@@ -10,7 +10,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int idx)
 	unsigned int count = 0;
 	dlistint_t *temp = *head, *next_add;
 
-	if (*head == NULL)
+	if (head == NULL)
 		return (-1);
 	while (temp)
 	{
