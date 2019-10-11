@@ -27,13 +27,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		start = ht->array[idx];
 		current = ht->array[idx];
 
-		if (strcmp(current->key, key) == 0)
+		while (current)
 		{
-			free(current->value);
-			current->value = strdup(value);
-			return (1);
+			if (strcmp(current->key, key) == 0)
+			{
+				free(current->value);
+				current->value = strdup(value);
+				return (1);
+			}
+			current = current->next;
 		}
-
 		n_node = add_node(value, key);
 		n_node->next = start;
 		ht->array[idx] = n_node;
