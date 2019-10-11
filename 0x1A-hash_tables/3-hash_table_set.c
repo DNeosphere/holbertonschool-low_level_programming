@@ -27,15 +27,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		start = ht->array[idx];
 		current = ht->array[idx];
 
-		while (current)
+		if (strcmp(current->key, key) == 0)
 		{
-			if (strcmp(current->key, key) == 0)
-			{
-				free(current->value);
-				current->value = strdup(value);
-				return (1);
-			}
-		current = current->next;
+			free(current->value);
+			current->value = strdup(value);
+			return (1);
 		}
 
 		n_node = add_node(value, key);
