@@ -10,7 +10,7 @@ void insertion_sort_list(listint_t **list)
 
 	node = (*list)->next;
 
-	if (!list)
+	if (!list || (*list)->next == NULL)
 		return;
 
 	while (node)
