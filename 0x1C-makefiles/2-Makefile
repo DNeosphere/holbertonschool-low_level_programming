@@ -2,6 +2,5 @@ CC = gcc
 SRC = main.c holberton.c
 OBJ = $(SRCS:%.o=.c)
 NAME = holberton
-
-all:
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
