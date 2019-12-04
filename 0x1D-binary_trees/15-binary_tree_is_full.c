@@ -23,7 +23,7 @@ int binary_tree_is_full(const binary_tree_t *tree)
 
 	if (left_t == 0 && rigth_t == 0)
 		return (0);
-	else if ((left_t == 1 && rigth_t == 0) || (left_t == 0 && rigth_t == 1))
+	else if (left_t != rigth_t)
 		return (0);
 	else
 		return (1);
