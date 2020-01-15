@@ -1,0 +1,1 @@
+Search algorithms: Binary search and Linear search
