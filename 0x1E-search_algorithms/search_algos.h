@@ -1,4 +1,4 @@
-#ifdef _SEARCH_ALGOS
+#ifndef _SEARCH_ALGOS
 #define _SEARCH_ALGOS
 
 /* Standard libraries */
